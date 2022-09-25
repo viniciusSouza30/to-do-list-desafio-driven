@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="board">
+        <h3>A fazer</h3>
+        <!-- esse ondrop significa onde queremos soltar os elementos que estamos arrastando -->
+        <ul id="a-fazer" ondrop="drop(event, this.id)" ondragover="over(event)">
+            
+        </ul>
+        <div class="add-card">
+            <p>Adicionar Tarefa</p>
+        </div>
+    </div>
+    <div class="board">
+        <h3>Fazendo</h3>
+        <ul id="fazendo" ondrop="drop(event, this.id)" ondragover="over(event)">
+            
+        </ul>
+        <div class="add-card">
+            <p>Adicionar Tarefa</p>
+        </div>
+    </div>
+    <div class="board">
+        <h3>Concluído</h3>
+        <ul id="concluido" ondrop="drop(event, this.id)" ondragover="over(event)">
+            
+        </ul>
+        <div class="add-card">
+            <p>Adicionar Tarefa</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

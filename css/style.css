@@ -1,0 +1,86 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 62%, rgba(9,9,121,1) 100%);
+    display: flex;
+    justify-content: center;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.board{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 350px;
+    margin: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+h3{
+    text-align: center;
+    background-color: rgba(2, 0, 36, 0.63);
+    color: white;
+    margin: 0px;
+    font-size: 26px;
+    border-radius: 0px 0px 41px 41px;
+    padding: 20px;
+}
+
+.add-card{
+    background-color: #1b1b1bf5;
+    margin: 4px 8px;
+    border-radius: 8px;
+    color: white;
+}
+
+.add-card:hover{
+    cursor: pointer;
+}
+
+.add-card p{
+    font-size: 16px;
+    padding: 1px;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+ul{
+    list-style: none;
+    min-height: 300px;
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+li{
+    background-color: white;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.26);
+    border-radius: 8px;
+    min-width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin: 4px 8px 0px 0px;
+    padding: 8px;
+    align-items: center;
+}
+
+li:hover{
+    cursor: move;
+}
+
+.remove{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    color: #c3c3c3;
+}
+
+.remove:hover{
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.521);
+}
